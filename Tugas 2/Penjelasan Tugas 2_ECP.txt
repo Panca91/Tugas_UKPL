@@ -1,0 +1,13 @@
+Input dibagi menjadi 8 kelas setara (equivalence classes) yang mencakup semua kemungkinan nilai input, yaitu:
+1. a dan b positif
+2. a dan b negatif
+3. a positif, b negatif
+4. a negatif, b positif
+5. a sama dengan 0, b sama dengan 0
+6. a sama dengan 0, b positif
+7. a positif, b sama dengan 0
+8. a negatif, b sama dengan 0
+
+Untuk setiap kelas, dilakukan pengujian dengan menggunakan nilai input yang representatif dan menghasilkan output yang diharapkan. Jika hasil pengujian tidak sesuai dengan hasil yang diharapkan, maka pengujian dianggap gagal.
+
+Dalam implementasi tersebut, setiap pengujian dilakukan dengan memanggil fungsi `tambah` dengan nilai input yang sesuai dengan kelas setara yang diuji. Kemudian hasil pengujian dibandingkan dengan hasil yang diharapkan untuk menentukan apakah pengujian berhasil atau gagal. Jika pengujian gagal, maka informasi mengenai nilai input dan hasil pengujian ditampilkan ke layar.

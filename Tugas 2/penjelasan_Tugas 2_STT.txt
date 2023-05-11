@@ -1,0 +1,19 @@
+Setiap pengujian dilakukan dengan memanggil fungsi stateTransitionTest. Fungsi ini menerima dua parameter: input yang merupakan input untuk fungsi yang akan diuji, dan expectedResult yang merupakan hasil yang diharapkan dari pengujian.
+
+Fungsi stateTransitionTest akan memanggil fungsi isValidPassword dengan input yang diberikan, kemudian membandingkan hasil aktual dengan hasil yang diharapkan. Jika hasil aktual sama dengan hasil yang diharapkan, maka pengujian dianggap berhasil. Namun, jika hasil aktual berbeda dengan hasil yang diharapkan, maka pengujian dianggap gagal.
+
+Hasil pengujian dapat dilihat pada output program. Jika sebuah pengujian berhasil, maka program akan mencetak "Pengujian berhasil". Namun, jika sebuah pengujian gagal, program akan mencetak "Pengujian gagal" dan menunjukkan hasil aktual dan hasil yang diharapkan.
+
+Pada fungsi isValidPassword, terdapat implementasi algoritma state transition testing. Algoritma ini menggunakan state machine yang terdiri dari beberapa state, dan mengubah state berdasarkan karakter saat ini dan state sebelumnya. Jika state akhir adalah 3, maka password dianggap valid. Namun, jika state akhir bukan 3, maka password dianggap tidak valid.
+
+Dalam contoh implementasi ini, terdapat empat state, yaitu:
+
+State 0: State awal, belum ada karakter yang dibaca
+State 1: Telah ada setidaknya satu angka
+State 2: Telah ada setidaknya satu huruf
+State 3: Telah ada setidaknya satu angka dan satu huruf
+Algoritma ini digunakan untuk menguji validitas password. Input password akan diterima oleh fungsi isValidPassword dan dilakukan pengujian validitas dengan cara membandingkan setiap karakter dalam password dengan state machine yang sudah ditentukan. Jika pada akhirnya state machine berada pada state 3, maka password tersebut dianggap valid.
+
+Dalam melakukan pengujian black box testing, kita harus memperhatikan beberapa hal. Pertama, kita harus mengidentifikasi setiap kondisi input yang mungkin terjadi. Dalam kasus ini, kita harus mengidentifikasi setiap kombinasi karakter yang mungkin terdapat dalam password. Kedua, kita harus mengidentifikasi setiap output yang diharapkan untuk setiap kondisi input. Dalam kasus ini, output yang diharapkan adalah valid atau tidak valid. Ketiga, kita harus mengimplementasikan test case untuk setiap kombinasi kondisi input dan output yang mungkin terjadi.
+
+Dalam contoh implementasi di atas, kita telah melakukan beberapa test case untuk menguji validitas input password. Namun, kita dapat melakukan pengujian yang lebih banyak dan detail untuk memastikan fungsi isValidPassword dapat berjalan dengan baik dalam berbagai kondisi input yang mungkin terjadi.
